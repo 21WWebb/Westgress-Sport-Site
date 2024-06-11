@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/w3.css">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <title>Bulldog</title>
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+
+    <div class="w3-container w3-center title">
+        <h1 class="kelsi">Bulldog</h1>
+    </div>
+
+    <hr class="solid">
+
+    <div class="">
+        <div class="w3-container">
+            <h2>Overview</h2>
+
+            <hr class="solid">
+
+            <p>You and your teammates must get to the other side of the play area whilst someone in the middle tries to
+                tag you. If you're caught you join them. Last person not to be caught by the bulldog wins.</p>
+
+            <img src="/images/bulldog-svgrepo-com.svg" class="w3-hide-medium w3-hide-small w3-display-bottomright"
+                style="position: absolute; z-index: -1;">
+        </div>
+        <div class="w3-container w3-hide-small">
+            <h2>How to Play</h2>
+
+            <hr class="solid">
+
+            <iframe src="https://www.youtube.com/embed/VIqJ_yizsDE" allowfullscreen width="800px"
+                height="600px"></iframe>
+        </div>
+        <div class="w3-hide-medium w3-hide-large w3-container">
+            <hr class="solid">
+            <a href="https://www.youtube.com/watch?v=VIqJ_yizsDE" class="w3-yellow w3-button" id="index-button"
+                style="margin: auto;">
+                <h2 class="w3-text-black">How To Play</h2>
+            </a>
+        </div>
+    </div>
+
+
+    <script>
+        $.get("/navbar.html", function (data) {
+            $("#nav-placeholder").replaceWith(data);
+            $("#activities").addClass("w3-yellow")
+            $("#bulldog").addClass("w3-light-gray")
+        });
+    </script>
+</body>
+
+</html>

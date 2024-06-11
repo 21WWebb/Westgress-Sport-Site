@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/w3.css">
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <title>Capture The Flag</title>
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+
+    <div class="w3-container w3-center title">
+
+        <h1 class="kelsi">Capture The Flag</h1>
+
+    </div>
+
+    <hr class="solid">
+
+    <div class="">
+        <div class="w3-container">
+            <h2>Overview</h2>
+
+            <hr class="solid">
+
+            <p>Capture the flag has two teams. Your team must take the opposing team's flag from their territory and
+                return it to your own in order to win.
+                However, you can stop people from getting your team's flag by tagging them, causing them to go to "jail"
+                where they must wait until a team member sets them free.
+            </p>
+
+            <img src="/images/flags-crossed-svgrepo-com.svg" class="w3-hide-medium w3-hide-small w3-display-bottomright"
+                style="position: absolute; z-index: -1;">
+        </div>
+        <div class="w3-container w3-hide-small">
+            <h2>How to Play</h2>
+
+            <hr class="solid">
+
+            <iframe src="https://www.youtube.com/embed/Pr91QWjPAGw" allowfullscreen width="800px" height="450px"
+                class="w3-mobile"></iframe>
+        </div>
+        <div class="w3-hide-medium w3-hide-large w3-container">
+            <hr class="solid">
+            <a href="https://www.youtube.com/watch?v=Pr91QWjPAGw" class="w3-yellow w3-button" id="index-button"
+                style="margin: auto;">
+                <h2 class="w3-text-black">How To Play</h2>
+            </a>
+        </div>
+    </div>
+
+
+    <script>
+        $.get("/navbar.html", function (data) {
+            $("#nav-placeholder").replaceWith(data);
+            $("#activities").addClass("w3-yellow")
+            $("#ctf").addClass("w3-light-gray")
+        });
+    </script>
+</body>
+
+</html>

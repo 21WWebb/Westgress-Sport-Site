@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="import" href="components/navbar.html">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <title>About SuW</title>
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+
+    <div class="w3-container w3-center title">
+        <h1 class="kelsi">About</h1>
+    </div>
+
+    <hr class="solid">
+
+    <p>Summer at Westgress is a FREE summer program for kids aged 10-16. We want kids to be more active during the
+        holidays, through fun activities and enjoyable experiences. Kids can join regardless of fitness or sporting
+        ability.</p>
+
+    <h2>Location:</h2>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4880.302821908817!2d-0.010334979214897904!3d52.29510625876165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4877dfc71d251653%3A0x4ec15f5df3d19c4c!2sSwavesey%20Community%20Pavilion!5e0!3m2!1sen!2suk!4v1718060014747!5m2!1sen!2suk"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <h2>Date & Time:</h2>
+    <p>The Summer at Westgress program will be occuring from August 4th to August 10th from 10am to 3pm. It is advised
+        to pack lunch for your children as no lunch will be available for purchase during the program.</p>
+
+    <script>
+        $.get("navbar.html", function (data) {
+            $("#nav-placeholder").replaceWith(data);
+            $("#about").addClass("w3-yellow")
+        });
+    </script>
+</body>
+
+</html>

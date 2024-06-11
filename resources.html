@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="import" href="components/navbar.html">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <title>Resources</title>
+</head>
+
+<body>
+    <div id="nav-placeholder"></div>
+
+    <div class="w3-container w3-center title">
+        <h1 class="kelsi">Resources</h1>
+    </div>
+
+    <hr class="solid">
+
+    <h2>Shops Nearby</h2>
+
+    <hr class="solid">
+
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4103.903889729256!2d-0.012549563307433943!3d52.29429959921427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4877df5fa9683357%3A0xdba4f343742ff910!2sLondis!5e0!3m2!1sen!2suk!4v1718109271693!5m2!1sen!2suk"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <hr class="solid">
+
+    <h2>Clubs Nearby</h2>
+
+    <hr class="solid">
+
+    <a href="https://maps.app.goo.gl/xiFBTCFp7t2iEVhW9" class="w3-yellow w3-button" id="index-button"
+        style="margin: auto;">
+        <h2 class="w3-text-black">Click here to see list</h2>
+    </a>
+
+    <script>
+        $.get("navbar.html", function (data) {
+            $("#nav-placeholder").replaceWith(data);
+            $("#resources").addClass("w3-yellow")
+        });
+    </script>
+</body>
+
+</html>
