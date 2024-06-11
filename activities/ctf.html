@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/w3.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <title>Capture The Flag</title>
+    <base href="https://21wwebb.github.io/Westgress-Sport-Site/">
 </head>
 
 <body>
@@ -33,7 +34,7 @@
                 where they must wait until a team member sets them free.
             </p>
 
-            <img src="/images/flags-crossed-svgrepo-com.svg" class="w3-hide-medium w3-hide-small w3-display-bottomright"
+            <img src="images/flags-crossed-svgrepo-com.svg" class="w3-hide-medium w3-hide-small w3-display-bottomright"
                 style="position: absolute; z-index: -1;">
         </div>
         <div class="w3-container w3-hide-small">
@@ -55,7 +56,7 @@
 
 
     <script>
-        $.get("/navbar.html", function (data) {
+        $.get("navbar.html", function (data) {
             $("#nav-placeholder").replaceWith(data);
             $("#activities").addClass("w3-yellow")
             $("#ctf").addClass("w3-light-gray")

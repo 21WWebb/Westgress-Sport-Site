@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/w3.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <title>Tennis</title>
+    <base href="https://21wwebb.github.io/Westgress-Sport-Site/">
 </head>
 
 <body>
@@ -29,7 +30,7 @@
                 Points are scored as 15, 30, 40 and game, with "love" meaning 0 and "deuce" meaning a tied score. First
                 player to win six games wins.</p>
 
-            <img src="/images/tennis-svgrepo-com.svg" class="w3-hide-medium w3-hide-small w3-display-bottomright"
+            <img src="images/tennis-svgrepo-com.svg" class="w3-hide-medium w3-hide-small w3-display-bottomright"
                 style="position: absolute; z-index: -1;">
         </div>
         <div class="w3-container w3-hide-small">
@@ -50,7 +51,7 @@
     </div>
 
     <script>
-        $.get("/navbar.html", function (data) {
+        $.get("navbar.html", function (data) {
             $("#nav-placeholder").replaceWith(data);
             $("#activities").addClass("w3-yellow")
             $("#tennis").addClass("w3-light-gray")
