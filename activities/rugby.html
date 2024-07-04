@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <title>Rugby</title>
-    <base href="https://21wwebb.github.io/Westgress-Sport-Site/" target="_self">
+    <!-- <base href="https://21wwebb.github.io/Westgress-Sport-Site/" target="_self"> -->
 </head>
 
 <body>
@@ -20,39 +20,41 @@
         <div class="w3-center title">
             <h1 class="kelsi">Rugby</h1>
         </div>
-        <div>
+
+        <hr class="solid">
+    
+        <div class="w3-hide-small w3-container w3-half">
+            <h2><b>How to Play</b></h2>
+
             <hr class="solid">
-            <h2>Overview</h2>
+
+            <iframe class="video" src="https://www.youtube.com/embed/Q8bdqMeuIiM" allowfullscreen width="800px"
+                height="450px"></iframe>
+        </div>
+        <div class="w3-hide-medium w3-hide-large w3-container w3-half">
+            <a href="https://www.youtube.com/watch?v=Q8bdqMeuIiM" class="w3-yellow w3-button" id="index-button"
+                style="margin: auto;">
+                <h2 class="w3-text-black">How To Play</h2>
+            </a>
+        </div>
+
+        <div class="w3-container w3-rest">
+            
+            <h2><b>Overview</b></h2>
 
             <hr class="solid">
 
             <p>Rugby is a game played with two teams. The main objective of the game is to touch the ball down in the
                 opponent's in-goal area, called the tryzone.
                 The team with the most points at the end of the time limit wins.</p>
-
-            <img src="images/rugby-svgrepo-com.svg" class="w3-hide-medium w3-hide-small w3-display-bottomright"
+        </div>
+        <img src="../images/rugby-svgrepo-com.svg" class="w3-hide-medium w3-hide-small w3-display-bottomright"
                 style="position: absolute; z-index: -1;">
-        </div>
-        <div class="w3-hide-small">
-            <h2>How to Play</h2>
-
-            <hr class="solid">
-
-            <iframe src="https://www.youtube.com/embed/Q8bdqMeuIiM" allowfullscreen width="800px"
-                height="450px"></iframe>
-        </div>
-        <div class="w3-hide-medium w3-hide-large">
-            <hr class="solid">
-            <a href="https://www.youtube.com/watch?v=Q8bdqMeuIiM" class="w3-yellow w3-button" id="index-button"
-                style="margin: auto;">
-                <h2 class="w3-text-black">How To Play</h2>
-            </a>
-        </div>
     </article>
 
 
     <script>
-        $.get("navbar.html", function (data) {
+        $.get("navbar_activities.html", function (data) {
             $("#nav-placeholder").replaceWith(data);
             $("#activities").addClass("w3-yellow")
             $("#rugby").addClass("w3-light-gray")

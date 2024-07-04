@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <title>Tennis</title>
-    <base href="https://21wwebb.github.io/Westgress-Sport-Site/" target="_self">
+    <!-- <base href="https://21wwebb.github.io/Westgress-Sport-Site/" target="_self"> -->
 </head>
 
 <body>
@@ -19,38 +19,39 @@
             <h1 class="kelsi">Tennis</h1>
         </div>
 
-        <div>
-            <hr class="solid">
-            <h2>Overview</h2>
+        <hr class="solid">
+
+        <div class="w3-hide-small w3-container w3-half">
+            <h2><b>How to Play</b></h2>
 
             <hr class="solid">
 
-            <p>Hit the tennis ball over the net and into the opponent's half of the court so that they can't return it.
-                Points are scored as 15, 30, 40 and game, with "love" meaning 0 and "deuce" meaning a tied score. First
-                player to win six games wins.</p>
-
-            <img src="images/tennis-svgrepo-com.svg" class="w3-hide-medium w3-hide-small w3-display-bottomright"
-                style="position: absolute; z-index: -1;">
-        </div>
-        <div class="w3-hide-small">
-            <h2>How to Play</h2>
-
-            <hr class="solid">
-
-            <iframe src="https://www.youtube.com/embed/zcagGHQhcMI" allowfullscreen width="800px"
+            <iframe class="video" src="https://www.youtube.com/embed/zcagGHQhcMI" allowfullscreen width="800px"
                 height="450px"></iframe>
         </div>
-        <div class="w3-hide-medium w3-hide-large">
+        <div class="w3-hide-medium w3-hide-large w3-container w3-half">
             <hr class="solid">
             <a href="https://www.youtube.com/watch?v=zcagGHQhcMI" class="w3-yellow w3-button" id="index-button"
                 style="margin: auto;">
                 <h2 class="w3-text-black">How To Play</h2>
             </a>
         </div>
+
+        <div class="w3-rest w3-container">
+            <h2><b>Overview</b></h2>
+
+            <hr class="solid">
+
+            <p>Hit the tennis ball over the net and into the opponent's half of the court so that they can't return it.
+                Points are scored as 15, 30, 40 and game, with "love" meaning 0 and "deuce" meaning a tied score. First
+                player to win six games wins.</p>
+        </div>
+        <img src="../images/tennis-svgrepo-com.svg" class="w3-hide-medium w3-hide-small w3-display-bottomright"
+                style="position: absolute; z-index: -1;">
     </article>
 
     <script>
-        $.get("navbar.html", function (data) {
+        $.get("navbar_activities.html", function (data) {
             $("#nav-placeholder").replaceWith(data);
             $("#activities").addClass("w3-yellow")
             $("#tennis").addClass("w3-light-gray")

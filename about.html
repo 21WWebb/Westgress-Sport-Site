@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <title>About Summer at Westgress</title>
-    <base href="https://21wwebb.github.io/Westgress-Sport-Site/" target="_self">
+    <!-- <base href="https://21wwebb.github.io/Westgress-Sport-Site/" target="_self"> -->
 </head>
 
 <body>
@@ -22,20 +22,32 @@
 
         <hr class="solid">
 
-        <p>Summer at Westgress is a FREE summer program for kids aged 10-16. We want kids to be more active during the
+        <p class="w3-container">Summer at Westgress is a FREE summer program for kids aged 10-16. We want kids to be
+            more active during the
             holidays, through fun activities and enjoyable experiences. Kids can join regardless of fitness or sporting
             ability.</p>
 
-        <h2>Location:</h2>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4880.302821908817!2d-0.010334979214897904!3d52.29510625876165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4877dfc71d251653%3A0x4ec15f5df3d19c4c!2sSwavesey%20Community%20Pavilion!5e0!3m2!1sen!2suk!4v1718060014747!5m2!1sen!2suk"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="w3-half w3-container">
+            <h2><b>Location:</b></h2>
+            <iframe class="video"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4880.302821908817!2d-0.010334979214897904!3d52.29510625876165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4877dfc71d251653%3A0x4ec15f5df3d19c4c!2sSwavesey%20Community%20Pavilion!5e0!3m2!1sen!2suk!4v1718060014747!5m2!1sen!2suk"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
-        <h2>Date & Time:</h2>
-        <p>The Summer at Westgress program will be occuring from August 4th to August 10th from 10am to 3pm. It is
-            advised
-            to pack lunch for your children as no lunch will be available for purchase during the program.</p>
+        <div class="w3-rest w3-container">
+            <h2><b>Date & Time:</b></h2>
+            <p>The Summer at Westgress program will be occuring from <span class="w3-yellow">August 4th to August 10th from 10am to 3pm</span>. It is
+                advised
+                to pack lunch for your children as <b>no lunch will be available for purchase during the program.</b></p>
+            <p>Throughout each day there will be two groups for the activities, one for 10 year olds to 13 year olds and another for 14 year olds to 16 year olds.</p>
+            <img src="images/timetable.PNG" class="video w3-hide-medium w3-hide-small">
+        </div>
+
+        <div class="w3-container w3-hide-large">
+            <img src="images/timetable.PNG" class="">
+            <p class="w3-small">(you may need to open this image in a seperate tab if you are on mobile)</p>
+        </div>
     </article>
 
 
@@ -43,7 +55,7 @@
         $.get("navbar.html", function (data) {
             $("#nav-placeholder").replaceWith(data);
             $("#about").addClass("w3-yellow")
-        });
+        })
     </script>
 </body>
 
